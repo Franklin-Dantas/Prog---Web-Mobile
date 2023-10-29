@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jogo de Dados em Cassino</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+    }
+    #resultado {
+        font-size: 24px;
+        margin-top: 20px;
+    }
+</style>
+</head>
+<body>
+<h1>Jogo de Dados em Cassino</h1>
+<button onclick="jogarDados()">Jogar Dados</button>
+<div id="resultado"></div>
+
+<script>
+function jogarDados() {
+    // Simula o lançamento de dois dados, cada um com valores de 1 a 6.
+    const dado1 = Math.floor(Math.random() * 6) + 1;
+    const dado2 = Math.floor(Math.random() * 6) + 1;
+    
+    // Calcula a soma dos valores dos dados.
+    const soma = dado1 + dado2;
+    
+    // Verifica as regras do jogo.
+    let mensagem = "";
+    if (soma === 7 || soma === 11) {
+        mensagem = "Você ganhou! Soma dos dados: " + soma;
+    } else if (soma === 2 || soma === 3 || soma === 12) {
+        mensagem = "Você perdeu! Soma dos dados: " + soma;
+    } else {
+        mensagem = "Jogue novamente. Soma dos dados: " + soma;
+    }
+    
+    // Exibe o resultado para o usuário.
+    document.getElementById("resultado").innerHTML = mensagem;
+}
+</script>
+</body>
+</html>
