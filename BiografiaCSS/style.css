@@ -1,7 +1,6 @@
 body {
-    background-image: url("../midia/FundoPag.jpg");
+    background-image: url("../BiografiaCSS/FundoPag.jpg");
     background-color: lightblue;
-    background-image: linear-gradient(to bottom right, #6495ED, #836FFF);
 }
 
 .main {
@@ -12,10 +11,10 @@ body {
 }
 
 .main {
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-top: 13%;
-    margin-bottom: 1%;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 10%;
+    margin-bottom: 2%;
     padding-top: 20%;
     text-align: center;
     padding: 100px;
